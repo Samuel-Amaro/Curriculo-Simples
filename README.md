@@ -5,8 +5,9 @@ Demostração de como criar um curriculo, para um desenvolvedor, curriculo criad
  * HTML5
  * CSS3
  * [Site-Icons](https://www.flaticon.com/)
+ * [Fontes](https://fonts.google.com/)
 ## Exemplo Usado
-[Exemplo-Usado](https://startbootstrap.com/previews/resume)
+* [Exemplo-Usado](https://startbootstrap.com/theme/resume)
 # Visualizar Exemplo Feito
 * [Visualizar-Curriculo](https://samuel-amaro.github.io/Curriculo-Simples/)
 
