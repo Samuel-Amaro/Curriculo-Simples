@@ -1,0 +1,135 @@
+
+/*zerando todas as propriedades das caixas dos elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*todas as caixas dos elementos HTML com altura e largura*/
+}
+
+/*no conteiner do menu lateral*/
+.menu_lateral{
+    position: fixed; /*caixa fica fixa, não rola com a pagina*/
+    width: 20%; /*largura vai ser 30% da pagina total*/
+    height: 100%; /*a altura pode cobrir toda pagina*/
+    background-color: #BD5D38;/*cor de fundo*/
+}
+
+/*conteiner de foto de perfil estilizando o elemento img*/
+.foto_perfil > img{
+    width:50%; /*a largura da imagen pode ser 20% da largura total do conteiner*/
+    border-top: 8px;
+    border-right: 8px;
+    border-bottom: 8px;
+    border-left: 8px;
+    border-style: solid;
+    border-color: #CA7D60;
+    border-radius: 90%; /*arredondando imagen*/
+
+}
+
+/*somente conteiner de foto de perfil*/
+.foto_perfil{
+    text-align: center;
+}
+
+/*no conteiner menu*/
+.menu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;/*texto alinhado ao centro do conteiner horizontalmente*/
+}
+
+/*no conteiner menu estilizando os links de menu*/
+.menu > a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-weight:600;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;/*para os links ficarem um abaixo do outro, porque a caixa de link e inline não quebra de linha, mudando a caixa pode-se fazer os links quebrarem de linha e um ficar abaixo do outro*/
+    margin-bottom: 20px;
+    margin-top: 15px;
+    opacity: 0.5; /*aplica uma opacidade de cor em cada item do menu*/
+}
+
+/*conteiner de agrupamento dos elementos dentro do menu*/
+.elementos_conteiner{
+    position: absolute;/*posição absoluta*/
+    top: 15%; /*se afasta 50% do topo, o topo tem 100%, 50% de distancia*/
+    /*transform: translateY(-50%); /*alinhamento vertical de todos os elementos*/
+}
+
+/*no conteiner do conteudo principal*/
+.conteudo_main{
+    width: 80%;/*pode ocupar 80% da largura total da pagina na horizontal*/
+    height: 100%; /*a altura pode ser 100% da pagina*/
+    position: absolute; /*posicionamento do conteiner e absoluto, o seu posicionamento e baseado no menu lateral, toma o posicionamento do menu lateral para se posicionar*/
+    left: 20%; /*e toma 20% de distancia, da esquerda para direita, por causa do menu lateral*/
+}
+
+/* na seção de introdução, que esta dentro do conteiner conteudo_main*/
+.section_introducao{
+    padding-left: 3%; /*espaço interno no lado esquerdo entre a borda e conteudo, do menu lateral ao conteudo*/
+    position: relative; /*posição relativa, isso e seu posicionamento e normal, continua em seu lugar, sem precisar mudar posicionamento*/
+    top: 20%;/*se afasta 40% do topo, o topo tem 100%, 40% de distancia, para o conteudo aparecer, isso e a pagina começa a aparecer a partir de 40% de afastamento do topo da pagina de cima para baixo*/
+}
+
+/*no titulo principal da seção de introdução*/
+.section_introducao > h1{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 85px;
+    color: #343A40;
+}
+
+/*dentro do titulo principal dando enfase na palavra taylor*/
+.section_introducao > h1 > span{
+    color: #BD5D38;
+}
+
+/*no subtitulo da introdução, na descrição*/
+.section_introducao > h2 {
+    color: #6c757d;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 500;
+    /*margin-top: 0px; /*uma margem de espaço no topo da caixa do h2 entre a caixa do h2 e h1*/
+    /*margin-bottom: 15px; /*uma margem de espaço no inferior da caixa do h2 entre a caixa do h2 e p*/
+}
+
+/*no subtitulo da introdução, no email de contato*/
+.section_introducao > h2 > a {
+    color: #BD5D38;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/*no conteudo da introduçaõ no paragrafo de introdução*/
+.section_introducao > p{
+    color: #6c757d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; /*tamanho da fonte*/
+    font-weight:normal;
+    margin-top: 40px;/*uma margem de espaço no topo da caixa do p entre a caixa do p e h2*/
+}
+
+/*conteiner de icones de contato e rede social*/
+.redes_sociais_contato{
+    margin-top: 35px;/*uma margem de espaço no topo do conteiner redes_sociais_contato que fica entre a caixa redes_sociais_contato e p*/
+}
+
+/*no primeiro icone dos contato*/
+.redes_sociais_contato > #icone_linkdin{
+    text-decoration: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+/*nos outros icones*/
+.redes_sociais_contato > .icone{
+    text-decoration: none;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+}
