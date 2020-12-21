@@ -8,4 +8,5 @@ Demostração de como criar um curriculo, para um desenvolvedor, curriculo criad
 ## Exemplo Usado
 [Exemplo-Usado](https://startbootstrap.com/previews/resume)
 # Visualizar Exemplo Feito
+* [Visualizar-Curriculo](https://samuel-amaro.github.io/Curriculo-Simples/)
 
