@@ -1,3 +1,10 @@
+/*carregando um fonte externa via arquivo*/
+@font-face{
+    font-family: 'fonte-metropolis';
+    src: url('fontes/Metropolis-Regular.otf') format('opentype');
+}
+
+
 
 /*zerando todas as propriedades das caixas dos elementos*/
 *{
@@ -71,9 +78,12 @@
 
 /* na seção de introdução, que esta dentro do conteiner conteudo_main*/
 .section_introducao{
-    padding-left: 3%; /*espaço interno no lado esquerdo entre a borda e conteudo, do menu lateral ao conteudo*/
     position: relative; /*posição relativa, isso e seu posicionamento e normal, continua em seu lugar, sem precisar mudar posicionamento*/
-    top: 20%;/*se afasta 40% do topo, o topo tem 100%, 40% de distancia, para o conteudo aparecer, isso e a pagina começa a aparecer a partir de 40% de afastamento do topo da pagina de cima para baixo*/
+    /*add um espaço interno dentro da caixa da section, um espaço interno entre a caixa que o section contem e a borda da caixa da , um espaço interno entre a borda e conteudo*/
+    padding-top: 130px;
+    padding-bottom: 180px;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 
 /*no titulo principal da seção de introdução*/
@@ -107,7 +117,7 @@
 
 /*no conteudo da introduçaõ no paragrafo de introdução*/
 .section_introducao > p{
-    color: #6c757d;
+    color: #6c757d;  
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px; /*tamanho da fonte*/
     font-weight:normal;
@@ -133,3 +143,82 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+
+/**************************************************************************************************************/
+/*                   section experiencia estilização                                                          */
+
+
+/**************************************EXPERIENCIA 01-02-03-04************************************************/
+
+/*na caixa da seção de experiencia*/
+.resumo-secao#experiencia{
+    /*add um espaço interno dentro da caixa da section experience, um espaço interno entre a caixa que o section contem e a borda da caixa da, um espaço interno entre a borda e conteudo*/
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+/*no conteiner que abrange o conteudo de todas as seções*/
+.conteudo-experiencia{
+        /*aplciar essa fonte*/
+        font-family: 'fonte-metropolis';
+        /*aplicar esse tamanho*/
+        font-size: 18px;
+}        
+
+/*no titulo da seção de experiencia profissional*/
+.resumo-secao-conteudo > h2{
+    /*add um espaço externo ao redor da caixa na parte de baixo, entre essa caixa e a proxima caixa*/
+    margin-bottom: 48px;
+    /*o texto do titulos tem que ficar todo maiusculo*/
+    text-transform: uppercase;
+    /*tamanho da fonte*/
+    font-size: 56px; 
+}
+
+/*na caixa que abrange todo o conteudo da experiencia*/
+.conteiner-experiencia > .conteudo-experiencia{
+    /*add um espaço externo ao redor da caixa na parte de baixo, entre essa caixa e a proxima caixa*/
+    margin-bottom: 48px;
+    /*largura da caixa, a caixa pode ocupar 70% da largura na horizontal do conteiner section experiencia*/
+    width: 70%;
+    /*mudando o display dessa caixa para poder colocar mais um conteiner ao lado dessa caixa, colocar o conteiner da data de experiencia, ao lado desse conteiner, o display inline bloco não quebra linha para o proximo elemento, e respeita os espaços add*/
+    display: inline-block;
+}
+
+/*na caixa onde descreve o local da experencia 01 de trabalho*/
+.conteudo-experiencia > .local-experiencia{
+    /*add um espaço externo ao redor da caixa na parte de baixo, entre essa caixa e a proxima caixa*/
+    margin-bottom: 16px;
+    /*familia de fonte para subtitulos*/
+    font-family: 'Saira Condensed', sans-serif;
+    /*tamanho da fonte*/
+    font-size: 24px;
+    /*grossura da fonte*/
+    font-weight: 500;
+}
+
+/*na caixa de paragrafo, onde esta a descrição da experiencia 01*/
+.conteudo-experiencia > .descricao-experiencia{
+    /*add um espaço externo ao redor da caixa na parte de baixo, entre essa caixa e a proxima caixa*/
+    margin-bottom: 16px;
+    
+}
+
+/*na caixa de div, conteiner que descreve a data da experiencia 01*/
+.conteiner-experiencia > .data-experiencia{
+    /*fazendo esse conteiner flutuar a direita do conteiner de conteudo da experiencia 01*/
+    float: right;
+}
+
+/*em cada subtitulo que descreve uma experiencia*/
+.conteudo-experiencia > h3{
+    /*todo subtitulo deve ser em maiusculo*/
+    text-transform: uppercase;
+    /*tamanho da fonte*/
+    font-size: 32px;
+    /*familia de fonte para subtitulos*/
+    font-family: 'Saira Condensed', sans-serif;
+}
+
