@@ -1,0 +1,36 @@
+/*zerando todas as propriedades das caixas dos elementos, que vão estar no documento html*/
+*{
+    /*tira todo espaço externo dos elementos*/
+    margin: 0;
+    /*tira todo espaço interno dos elementos*/
+    padding: 0; 
+    /*todas as caixas dos elementos HTML com altura e largura*/
+    box-sizing: border-box;
+}
+
+
+/*no conteiner do conteudo principal*/
+main.conteudo_principal{
+    /*pode ocupar 80% da largura total da pagina na horizontal*/
+    width: 80%;
+    /*a altura pode ser 100% da pagina*/
+    height: 100%;
+    /*posicionamento do conteiner e absoluto, o seu posicionamento e baseado no menu lateral, toma o posicionamento do menu lateral para se posicionar*/
+    position: absolute;
+    /*e toma 20% de distancia, da esquerda para direita, por causa da barra de navegação lateral*/
+    left: 20%; 
+}
+
+/*para cada linha separadora de hr que divide as sections do documento html*/
+hr.linha-separadora-horizontal{
+    /*tira todo prenchimento do elemento*/
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-width: 0px;
+    /*add um preenchimento so no topo do elemento, shorthand*/
+    border-top: 1px solid rgb(108, 117, 125);
+}
+

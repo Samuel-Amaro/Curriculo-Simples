@@ -1,0 +1,73 @@
+/*elemento nav(menu de navegação de links)*/
+nav.barra-navegacao-vertical-fixa{
+    position: fixed; /*caixa fica fixa, não rola com a pagina*/
+    width: 20%; /*largura vai ser 30% da pagina total*/
+    height: 100%; /*a altura pode cobrir toda pagina*/
+    background-color: #BD5D38;/*cor de fundo*/
+}
+
+
+/*somente conteiner de foto de perfil*/
+div.foto_perfil{
+    /*texto alinhado ao centro do conteiner horizontalmente*/
+    text-align: center;
+}
+
+/*conteiner de foto de perfil estilizando o elemento img*/
+div.foto_perfil > img{
+    /*a largura da imagen pode ser 60% da largura total em relação ao elemento do conteiner que ele e filho*/
+    width: 70%;
+    /*Add um prenchimento em todos os lados do elemento*/
+    border-top: 8px;
+    border-right: 8px;
+    border-bottom: 8px;
+    border-left: 8px;
+    border-style: solid;
+    border-color: #CA7D60;
+    /*arredondando imagen - arredonda o prenchimento*/
+    border-radius: 100%; 
+
+}
+
+/*no bloco de conteiner menu*/
+div.menu{
+    /*add espaço externo ao elemento*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*tirando espaço externo nos lados do elemento*/
+    margin-left: 0px;
+    margin-right: 0px;
+    /*texto alinhado ao centro do conteiner horizontalmente*/
+    text-align: center;
+}
+
+/*no conteiner menu estilizando os links de menu*/
+div.menu > a{
+    /*fonte do google fontes*/
+    font-family: 'muli';
+    /*cor do texto*/
+    color:white;
+    /*espessura da fonte*/
+    font-weight:800;
+    /*tamanho da fonte*/
+    font-size: 16px;
+    /*altura da linha de cada fonte*/
+    line-height: 24px;
+    /*tira sublinhado do link*/
+    text-decoration: none;
+    /*para os links ficarem um abaixo do outro, porque a caixa de link e inline não quebra de linha, mudando a caixa pode-se fazer os links quebrarem de linha e um ficar abaixo do outro*/
+    display: block;
+    /*add espaço externo ao elemento, expaço externo no inferior do elemento, na parte de baixo, da borda para fora, abaixo do elemento*/
+    margin-bottom: 20px;
+    /*add espaço externo ao elemento, expaço externo no topo do elemento, na parte de cima, da borda para fora, acima do elemento*/
+    margin-top: 15px;
+    /*aplica uma opacidade(trasparencia) de 50% cor em cada item do menu*/
+    opacity: 0.5; 
+}
+
+/*conteiner de agrupamento dos elementos dentro do menu*/
+div.elementos_conteiner{
+    position: absolute;/*posição absoluta*/
+    top: 5%; /*se afasta 50% do topo, o topo tem 100%, 50% de distancia*/
+    /*transform: translateY(-50%); /*alinhamento vertical de todos os elementos*/
+}

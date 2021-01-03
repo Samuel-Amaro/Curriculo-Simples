@@ -1,117 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- metadados da pagina-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculo</title>
+    <meta name="author" content="Samuel Amaro Do Nascimento">
+    <meta name="description" content="Um modelo de curriculo simples para que esta se iniciando na carreira de programador, um modelo de curriculo de um desenvolvedor iniciante, onde pode atributir seus conhecimentos e informações relevantes para uma empresa contratante">
+    <meta name="keywords" content="HTML5, CSS3, Pagina Estatica, Curriculo Desenvolvedor, Currilo para iniciantes em programação, modelo de currilo para iniciantes, Curriculo, Portfolio, Como fazer curriculo, Exemplo de Curriculo">
+
     <!-- fontes do google fontes-->
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;700&display=swap" rel="stylesheet">
     <link href = "https://fonts.googleapis.com/css2? family = Work + Sans & display = swap" rel = "folha de estilo">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500&family=Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&family=Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;300&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet"/>
 
-    <!-- estilo -->
-    <link rel="stylesheet" href="estilos/estilo.css">
+    <!-- estilo geral-->
+    <link rel="stylesheet" href="estilos/estilo-conteudo-principal.css">
+    <!--estilo da barra de navegação vertical fixa-->
+    <link rel="stylesheet" href="estilos/estilo-barra-navegacao-vertical-fixa.css">
+    <!--estilo da header introducao-->
+    <link rel="stylesheet" href="estilos/estilo-header-introducao.css">
+    <!--estilo da section experience-->
+    <link rel="stylesheet" href="estilos/estilo-section-experience.css">
 </head>
 <body>
+
     <!-- menu de navegação lateral -->
-    <nav class="menu_lateral">
+    <nav class="barra-navegacao-vertical-fixa">
         <!-- agrupando elementos do conteiner-->
         <div class="elementos_conteiner">
             <!-- conteiner foto de perfil-->
             <div class="foto_perfil">
-                <img src="icones-imagens/profile.jpg" alt="foto_pessoal_curriculo">
+                <img src="icones-imagens/IMG_20200607_184152 (2).jpg" alt="foto_pessoal_curriculo">
             </div>
             <!-- conteiner do menu-->
             <div class="menu">
-                <a href="#">SOBRE</a>
-                <a href="#">EXPERIENCIA</a>
-                <a href="#">SKILS</a>
-                <a href="#">INTERESSES</a>
-                <a href="#">CERTIFICAÇÕES</a>
-                <a href="#">EDUCAÇÃO</a>
+                <a href="#sobre">SOBRE</a>
+                <a href="#Experiencia">EXPERIENCIA</a>
+                <a href="#skils">SKILS</a>
+                <a href="#interesses">INTERESSES</a>
+                <a href="#certificacoes">CERTIFICAÇÕES</a>
+                <a href="#educacao">EDUCAÇÃO</a>
             </div>
         </div>
     </nav>
 
     <!-- CONTEUDO PRINCIPAL DIVIDIDO POR SEÇÕES -->
-    <div class="conteudo_main">
+    <main class="conteudo_principal">
         
-        <!-- SEÇÃO DE RESUMO INICIAL INTRODUÇÃO -->
-        <section class="section_introducao">
+        <!-- CABEÇALHO DE INTRODUÇÃO  -->
+        <header class="cabecalho_introducao">
                 <!-- CONTEUDO DA SEÇÃO RESUMO INICIAL INTRODUÇÃO-->
-                 <h1>CLARENCE <span>TAYLOR</span></h1> 
-                 <h2>3542 BERRY STREET · CHEYENNE WELLS, CO 80810 · (317) 585-8468  <a href="mailto:name@email.com"> NAME@EMAIL.COM</a></h2>
-                 <p>I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+                 <h1>Samuel <span>Amaro</span></h1> 
+                 <h2>Bosque 2 · <a href="https://www.formosa.go.gov.br/" target="_blank" rel="self">Formosa-Goias</a> ·<a href="mailto:samuelamaro96746313@gmail.com"> SAMUELAMARO96746313@GMAIL.COM</a></h2>
+                 <p>Sou Discente de um curso de análise e desenvolvimento de Sistemas, no instituto federal de goias da cidade aonde resido, gosto de tecnologia, de programação, estou estudando para atingir a formação de um programador full-stack, com foco em atuar no (desenvolvimento) web e mobile, atualmente estou com o objetivo de conseguir uma oportunidade de trabalho, como um estágio na área de programação ou alguma vaga correlata a programação, com um intuito de demostrar tudo que aprendi, trabalhando como um estagiário na programação, tenho certeza que vou aprender mais ainda, no contexto da programação, e me inserir no mercado de trabalho, poderá me surgir novas oportunidades de conhecimento.
                 </p>
-                <!-- icone de rede social e contato-->
-                <div class="redes_sociais_contato">
-                    <a id="icone_linkdin" href="#"><img src="icones-imagens/linkedin.png" alt="icone_linkedin"></a>
-                    <a class="icone" href="#"><img src="icones-imagens/github.png" alt="icone_hithub"></a>
-                    <a class="icone" href="#"><img src="icones-imagens/twitter.png" alt="icone_twitter"></a>
-                    <a class="icone" href="#"><img src="icones-imagens/facebook.png" alt="icone_facebook"></a>
-                </div>  
-        </section>
+                
+                <!--lista de elementos não ordenados, cada item da lista tem um ancora, e dentro de ancora tem um img-->
+                <ul class="menu-navegacao-redes-socias">
+                    <li class="icone">
+                        <a href="#linkedim">
+                            <img src="icones-imagens/linkedin-2-32.png" alt="icone_linkedin">
+                        </a>
+                    </li>
+                    <li class="icone">
+                         <a href="#github">
+                              <img src="icones-imagens/github-32-branco.png" alt="icone_hithub">
+                         </a>
+                    </li>
+                    <li class="icone">
+                        <a href="#twitter">
+                            <img src="icones-imagens/twitter-32-branco.png" alt="icone_twitter">
+                        </a>
+                    </li>
+                    <li class="icone">
+                        <a href="#facebook">
+                            <img src="icones-imagens/facebook-num-círculo-32-branco.png" alt="icone_facebook">
+                        </a>
+                    </li>
+                </ul>
+        </header>
 
         <!--linha separadora na horizontal-->
-        <hr class="separador-0">
+        <hr class="linha-separadora-horizontal">
 
         <!--seção que conta a experiencia profissional, esta separa por conteiner, cada experiencia, são 4 conteiner para quatro experiencias, todos identificados com seletor de classe, porque são muitos parecidos na estilização, assim poupa linhas de codigo-->
 
         <section class="resumo-secao" id="experiencia">
-            <div class="resumo-secao-conteudo">
-                <h2>Experience</h2>
+            <div class="conteudo-geral-section-experience">
+                <h2>Experiência</h2>
 
                 <!--experiencia 01-->
 
                 <div class="conteiner-experiencia">
                     <div class="conteudo-experiencia">
-                        <h3>Senior Web Developer</h3>
-                        <div class="local-experiencia">Intelitec Solutions</div>
-                        <p class="descricao-experiencia">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                        <h3>estagiário</h3>
+                        <div class="local-experiencia">SECRETARIA DE DESENVOLVIMENTO SOCIAL E TRABALHO.</div>
+                        <p class="descricao-experiencia">Atuando como estagiário, com a função de apoio-administrativo, dentro do CRÁS-1(centro referencia assistência social unidade 01) onde toda a demanda de benefícios e apoio a população da cidade de formosa e resolvida, onde tem o objetivo de dar apoio e assistência, dentro dos limites e alcance do crás, juntamente com a secretaria-social, o crás-1 e uma unidade pertencente a secretaria social. <a href="https://www.formosa.go.gov.br/estrutura-organizacional/?id=49" target="_blank" rel="self">Para Saber mais!</a></p>
                    </div>
-                   <div class="data-experiencia"><span>March 2013 - Present</span></div>
+                   <div class="data-experiencia"><span>Março 2020 - Até o dias de Hoje</span></div>
                 </div>
-
-               <!--experiencia 02-->
-
-               <div class="conteiner-experiencia">
-                   <div class="conteudo-experiencia">
-                       <h3>Web Developer</h3>
-                       <div class="local-experiencia">Intelitec Solutions</div>
-                       <p class="descricao-experiencia">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                   </div>
-                   <div class="data-experiencia"><span>December 2011 - March 2013</span></div>
-               </div>
-
-               <!-- experiencia 03-->
-
-               <div class="conteiner-experiencia">
-                   <div class="conteudo-experiencia">
-                       <h3>Junior Web Designer</h3>
-                       <div class="local-experiencia">Shout! Media Productions</div>
-                       <p class="descricao-experiencia">Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-                   </div>
-                   <div class="data-experiencia"><span>July 2010 - December 2011</span></div>
-               </div>
-
-               <!--experiencia 04-->
-
-               <div class="conteiner-experiencia">
-                   <div class="conteudo-experiencia">
-                       <h3>Web Design Intern</h3>
-                       <div class="local-experiencia">Shout! Media Productions</div>
-                       <p class="descricao-experiencia">Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                   </div>
-                   <div class="data-experiencia"><span>September 2008 - June 2010</span></div>
-               </div>
             </div>
         </section>
 
         <!-- linha separadora na horizontal, para separar as seções do documento -->
-        <hr>
+        <hr class="linha-separadora-horizontal">
 
-    </div>
+    </main>
 </body>
 </html>

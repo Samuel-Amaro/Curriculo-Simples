@@ -1,0 +1,120 @@
+
+/* na seção de introdução, que esta dentro do conteiner conteudo_main*/
+header.cabecalho_introducao{
+    /*posição relativa, isso e seu posicionamento e normal, continua em seu lugar, sem precisar mudar posicionamento*/
+    position: relative; 
+    /*add um espaço interno dentro da caixa da section, um espaço interno entre a caixa que o section contem e a borda da caixa da , um espaço interno entre a borda e conteudo*/
+    padding-top: 130px;
+    padding-bottom: 180px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+/*no titulo principal da seção de introdução*/
+header.cabecalho_introducao > h1{
+    /*fonte do texto*/
+    font-family: 'Saira Condensed', sans-serif;
+    /*tamanho do texto*/
+    font-size: 85px;
+    /*cor do texto*/
+    color: #343A40;
+    /*altura da linha*/
+    line-height: 1;
+}
+
+/*dentro do titulo principal dando enfase na palavra taylor*/
+header.cabecalho_introducao > h1 > span{
+    color: #BD5D38;
+}
+
+/*no subtitulo da introdução, na descrição*/
+header.cabecalho_introducao > h2 {
+    /*cor do texto*/
+    color: #6c757d;
+    /*fonte do google fontes*/
+    font-family: 'Saira Condensed', sans-serif;
+    /*espessura da fonte*/
+    font-weight: 500;
+}
+
+/*no subtitulo da introdução, no email de contato*/
+header.cabecalho_introducao > h2 > a {
+    color: #BD5D38;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/*no conteudo da introduçaõ no paragrafo de introdução*/
+header.cabecalho_introducao > p{
+    /*cor do texto*/
+    color: #6c757d;  
+    /*fonte do google fontes*/
+    font-family: 'muli';
+    /*tamanho da fonte*/
+    font-size: 18px;
+    /*estilo da fonte*/ 
+    font-weight:400;   
+    /*uma margem de espaço no topo da caixa do p entre a caixa do p e h2*/
+    margin-top: 48px;
+}
+
+
+/***********************MENU DE NAVEGAÇÃO HORIZONTAL DE ICONES DE CONTATO**************************/
+
+/*lista não ordenada*/
+ul.menu-navegacao-redes-socias{
+    /*lista sem estilo*/
+    list-style-type: none;
+    /*tira todo espaço externo ao redor da lista, da borda para fora*/
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /*tira todo espaço interno da lista, da borda para o conteudo*/
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    /*estouro, trasbordamento, de conteudo, se o conteudo do elemento ul for maior que a caixa, a overflow controla, esse conteudo, para ser ocultado ao passar da caixa, ao trasbordar, ou estourar*/
+    overflow: hidden;
+    /*espaço externo ao redor da lista, no topo, da borda para fora, da borda para cima, um espaço, entre essa caixa, e a caixa que esta acima*/
+    margin-top: 48px;
+}
+
+/*para item da lista*/
+ul.menu-navegacao-redes-socias > li{
+    /*cada item da lista vai se posicionar a esquerda*/
+    float: left;
+    /*add espaço interno em cada item da lista, entre a borda e conteudo, espaço interno entre a caixa do item da lista e a caixa do a*/
+    padding-top: 17px;
+    padding-right: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    /*espaço externo no lado direito, da borda para fora, da borda para a direita, espaço ao redor da caixa, entre esse caixa, e uma proxima*/
+    margin-right: 30px;   
+    /*add uma cor de fundo a cada item da lista*/
+    background-color: #495057;
+    /*arredonda as bordas(prenchimento) de cada lado de cada item da lista*/
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    /*largura de cada item da lista*/
+    width: 56px;
+    /*altura de cada item da lista*/
+    height: 56px;
+}
+
+/*para cada item da lista que possui um link(uma ancora)*/
+ul.menu-navegacao-redes-socias > li > a{
+    /*tira sublinhado da lista*/
+    text-decoration: none;
+}
+
+/*para o ultimo filho do elemento ul, que vai ser um item da lista*/
+ul.menu-navegacao-redes-socias > li:last-child{
+    /*tira o espaço externo do lado direito*/
+    margin-right: 0px;
+}
+
