@@ -1,6 +1,14 @@
 /*elemento nav(menu de navegação de links)*/
 nav.barra-navegacao-vertical-fixa{
-    position: fixed; /*caixa fica fixa, não rola com a pagina*/
+    /*alinha ao centro*/
+    text-align: center;
+    /*add espaçço interno*/
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    /*caixa fica fixa, não rola com a pagina*/ 
+    position: fixed; 
     width: 20%; /*largura vai ser 30% da pagina total*/
     height: 100%; /*a altura pode cobrir toda pagina*/
     background-color: #BD5D38;/*cor de fundo*/
@@ -8,25 +16,28 @@ nav.barra-navegacao-vertical-fixa{
 
 
 /*somente conteiner de foto de perfil*/
-div.foto_perfil{
+span.foto_perfil{
     /*texto alinhado ao centro do conteiner horizontalmente*/
     text-align: center;
+    display: block;
 }
 
-/*conteiner de foto de perfil estilizando o elemento img*/
-div.foto_perfil > img{
+img.img_profile{
     /*a largura da imagen pode ser 60% da largura total em relação ao elemento do conteiner que ele e filho*/
-    width: 70%;
+    width: 60%;
+    /*navegador define altura automaticamente*/
+    height: auto;
     /*Add um prenchimento em todos os lados do elemento*/
     border-top: 8px;
-    border-right: 8px;
     border-bottom: 8px;
     border-left: 8px;
+    border-right: 8px;    
     border-style: solid;
-    border-color: #CA7D60;
+    border-color:rgba(255, 255, 255, 0.2);
     /*arredondando imagen - arredonda o prenchimento*/
-    border-radius: 100%; 
-
+    border-radius: 50%;
+    /*a imagen pode ter a sua largura maxima*/
+    max-width: 100%;
 }
 
 /*no bloco de conteiner menu*/
