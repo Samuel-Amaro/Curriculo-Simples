@@ -57,6 +57,7 @@ header.cabecalho_introducao > p{
     font-weight:400;   
     /*uma margem de espaço no topo da caixa do p entre a caixa do p e h2*/
     margin-top: 48px;
+    text-indent: 50px;
 }
 
 
@@ -116,5 +117,10 @@ ul.menu-navegacao-redes-socias > li > a{
 ul.menu-navegacao-redes-socias > li:last-child{
     /*tira o espaço externo do lado direito*/
     margin-right: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #BD5D38;
 }
 

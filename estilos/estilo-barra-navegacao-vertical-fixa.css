@@ -24,7 +24,7 @@ span.foto_perfil{
 
 img.img_profile{
     /*a largura da imagen pode ser 60% da largura total em relação ao elemento do conteiner que ele e filho*/
-    width: 60%;
+    width: 64%;
     /*navegador define altura automaticamente*/
     height: auto;
     /*Add um prenchimento em todos os lados do elemento*/
@@ -35,7 +35,7 @@ img.img_profile{
     border-style: solid;
     border-color:rgba(255, 255, 255, 0.2);
     /*arredondando imagen - arredonda o prenchimento*/
-    border-radius: 50%;
+    border-radius: 70%;
     /*a imagen pode ter a sua largura maxima*/
     max-width: 100%;
 }

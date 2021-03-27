@@ -4,11 +4,12 @@
     <!-- metadados da pagina-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo</title>
+    <title>Currículo</title>
     <meta name="author" content="Samuel Amaro Do Nascimento">
     <meta name="description" content="Um modelo de curriculo simples para que esta se iniciando na carreira de programador, um modelo de curriculo de um desenvolvedor iniciante, onde pode atributir seus conhecimentos e informações relevantes para uma empresa contratante">
     <meta name="keywords" content="HTML5, CSS3, Pagina Estatica, Curriculo Desenvolvedor, Currilo para iniciantes em programação, modelo de currilo para iniciantes, Curriculo, Portfolio, Como fazer curriculo, Exemplo de Curriculo">
-
+    <!--icone da aba-->
+    <link rel="shortcut icon" href="icones-imagens/favicon.ico" type="image/x-icon">
     <!-- fontes do google fontes-->
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;700&display=swap" rel="stylesheet">
     <link href = "https://fonts.googleapis.com/css2? family = Work + Sans & display = swap" rel = "folha de estilo">
@@ -25,6 +26,10 @@
     <link rel="stylesheet" href="estilos/estilo-header-introducao.css">
     <!--estilo da section experience-->
     <link rel="stylesheet" href="estilos/estilo-section-experience.css">
+    <!--estilo da section educacao-->
+    <link rel="stylesheet" href="estilos/estilo-section-educacao.css">
+    <!--estilo da section habilidades-->
+    <link rel="stylesheet" href="estilos/estilo-section-habilidade.css">
 </head>
 <body>
 
@@ -34,7 +39,7 @@
         <div class="elementos_conteiner">
             <!-- conteiner foto de perfil-->
             <span class="foto_perfil">
-                <img class="img_profile" src="icones-imagens/1.jpg" alt="foto_pessoal_curriculo">
+                <img class="img_profile" src="icones-imagens/profile.jpg" alt="foto_pessoal_curriculo">
             </span>
             <!-- conteiner do menu-->
             <div class="menu">
@@ -56,8 +61,7 @@
                 <!-- CONTEUDO DA SEÇÃO RESUMO INICIAL INTRODUÇÃO-->
                  <h1>Samuel <span>Amaro</span></h1> 
                  <h2>Bosque 2 · <a href="https://www.formosa.go.gov.br/" target="_blank" rel="self">Formosa-Goias</a> ·<a href="mailto:samuelamaro96746313@gmail.com"> SAMUELAMARO96746313@GMAIL.COM</a></h2>
-                 <p>Sou Discente de um curso de análise e desenvolvimento de Sistemas, no instituto federal de goias da cidade aonde resido, gosto de tecnologia, de programação, estou estudando para atingir a formação de um programador full-stack, com foco em atuar no (desenvolvimento) web e mobile, atualmente estou com o objetivo de conseguir uma oportunidade de trabalho, como um estágio na área de programação ou alguma vaga correlata a programação, com um intuito de demostrar tudo que aprendi, trabalhando como um estagiário na programação, tenho certeza que vou aprender mais ainda, no contexto da programação, e me inserir no mercado de trabalho, poderá me surgir novas oportunidades de conhecimento.
-                </p>
+                 <p>Sou Discente de um curso de análise e desenvolvimento de Sistemas, no instituto federal de Goiás - <a href="https://www.ifg.edu.br/formosa" target="_blank" rel="external">IFG</a> da cidade aonde resido, gosto de tecnologia, de programação, estou estudando para atingir a formação de um programador full-stack, com foco em atuar no (desenvolvimento) web e mobile, atualmente estou com o objetivo de conseguir uma oportunidade de trabalho, como um estágio na área de programação ou alguma vaga correlata a programação, com um intuito de demostrar tudo que aprendi, trabalhando como um estagiário na programação, tenho certeza que vou aprender mais ainda, no contexto da programação, e me inserir no mercado de trabalho, poderá me surgir novas oportunidades de conhecimento, de atuar em projetos reais, resolvendo problemas usando tecnologia.</p>
                 
                 <!--lista de elementos não ordenados, cada item da lista tem um ancora, e dentro de ancora tem um img-->
                 <ul class="menu-navegacao-redes-socias">
@@ -99,15 +103,55 @@
                     <div class="conteudo-experiencia">
                         <h3>estagiário</h3>
                         <div class="local-experiencia">SECRETARIA DE DESENVOLVIMENTO SOCIAL E TRABALHO.</div>
-                        <p class="descricao-experiencia">Atuando como estagiário, com a função de apoio-administrativo, dentro do CRÁS-1(centro referencia assistência social unidade 01) onde toda a demanda de benefícios e apoio a população da cidade de formosa e resolvida, onde tem o objetivo de dar apoio e assistência, dentro dos limites e alcance do crás, juntamente com a secretaria-social, o crás-1 e uma unidade pertencente a secretaria social. <a href="https://www.formosa.go.gov.br/estrutura-organizacional/?id=115" target="_blank" rel="self">Para Saber mais!</a></p>
+                        <p class="descricao-experiencia">Atuando como estagiário, com a função de apoio-administrativo, dentro do CRÁS-1(centro referencia assistência social unidade 01) onde toda a demanda de benefícios e apoio a população da cidade de formosa e resolvida, onde tem o objetivo de dar apoio e assistência, dentro dos limites e alcance do crás, juntamente com a secretaria-social, o crás-1 e uma unidade pertencente a secretaria municipal de desenvolvimento social e trabalho, que em conjunto atua com a <a href="https://www.formosa.go.gov.br/" target="_blank" rel="external">prefeitura municipal de Formosa-Goiás.</a><a href="https://www.formosa.go.gov.br/estrutura-organizacional/?id=115" target="_blank" rel="self"> Para Saber mais!</a></p>
                    </div>
                    <div class="data-experiencia"><span>Março 2020 - Até o dias de Hoje</span></div>
                 </div>
             </div>
-        </section>
+        </section><!--resumo-secao-->
 
         <!-- linha separadora na horizontal, para separar as seções do documento -->
         <hr class="linha-separadora-horizontal">
+
+        <section class="resumo-secao" id="educacao">
+            <div class="conteudo-geral-section-educacao">
+                <h2>Educação</h2>
+                <!--experiencia 01-->
+                <div class="conteiner-educacao">
+                    <div class="conteudo-educacao">
+                        <h3>Instituto Federal de Goiás - <a href="https://www.ifg.edu.br/formosa" target="_blank" rel="external">Câmpus Formosa</a></h3>
+                        <div class="categoria">Graduação - Tecnologia</div>
+                        <p class="descricao-educacao">Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+                   </div>
+                   <div class="data"><span>Janeiro 2019 - Cursando</span></div>
+                </div>
+            </div>
+        </section><!--resumo-educação-->
+
+        <!--linha separadora na horizontal-->
+        <hr class="linha-separadora-horizontal">
+
+        <section class="resumo-secao" id="habilidades">
+            <div class="conteudo-geral-section-habilidade">
+                <h2>Skills</h2>
+                <!--experiencia 01-->
+                <div class="conteiner-habilidade">
+                    <div class="conteudo-habilidade">
+                        <div class="categoria">Linguagens e ferramentas de Programação</div>
+                   </div>
+                   <ul class="lista-ferramentas">
+                       <li><img src="icones-imagens/html_original.png" alt="Icone HTML5"></li>
+                       <li><img src="icones-imagens/css_original.png" alt="icone CSS"></li>
+                       <li><img src="icones-imagens/git.png" alt="icone git"></li>
+                       <li><img src="icones-imagens/java.png" alt="icone java"></li>
+                       <li><img src="icones-imagens/javascript.png" alt="icone java-script"></li>
+                       <li><img src="icones-imagens/language_c.png" alt="linguagem c"></li>
+                       <li><img src="icones-imagens/mysql.png" alt="icone banco de dados"></li>
+                       <li><img src="icones-imagens/postgresql.png" alt="icone bando de dados"></li>
+                   </ul>
+                </div>
+            </div>
+        </section><!--resumo-habilidades-->
 
     </main>
 </body>
