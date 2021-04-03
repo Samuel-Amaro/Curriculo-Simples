@@ -82,3 +82,7 @@ div.elementos_conteiner{
     top: 5%; /*se afasta 50% do topo, o topo tem 100%, 50% de distancia*/
     /*transform: translateY(-50%); /*alinhamento vertical de todos os elementos*/
 }
+
+div.menu > a:hover{
+    color:black;
+}
