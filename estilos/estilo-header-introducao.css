@@ -64,7 +64,7 @@ header.cabecalho_introducao > p{
 /***********************MENU DE NAVEGAÇÃO HORIZONTAL DE ICONES DE CONTATO**************************/
 
 /*lista não ordenada*/
-ul.menu-navegacao-redes-socias{
+nav.menu-navegacao-redes-socias{
     /*lista sem estilo*/
     list-style-type: none;
     /*tira todo espaço externo ao redor da lista, da borda para fora*/
@@ -84,7 +84,7 @@ ul.menu-navegacao-redes-socias{
 }
 
 /*para item da lista*/
-ul.menu-navegacao-redes-socias > li{
+nav.menu-navegacao-redes-socias > a.icone{
     /*cada item da lista vai se posicionar a esquerda*/
     float: left;
     /*add espaço interno em cada item da lista, entre a borda e conteudo, espaço interno entre a caixa do item da lista e a caixa do a*/
@@ -108,13 +108,13 @@ ul.menu-navegacao-redes-socias > li{
 }
 
 /*para cada item da lista que possui um link(uma ancora)*/
-ul.menu-navegacao-redes-socias > li > a{
+nav.menu-navegacao-redes-socias > a.icone{
     /*tira sublinhado da lista*/
     text-decoration: none;
 }
 
 /*para o ultimo filho do elemento ul, que vai ser um item da lista*/
-ul.menu-navegacao-redes-socias > li:last-child{
+nav.menu-navegacao-redes-socias > a.icone:last-child{
     /*tira o espaço externo do lado direito*/
     margin-right: 0px;
 }
@@ -122,5 +122,9 @@ ul.menu-navegacao-redes-socias > li:last-child{
 a{
     text-decoration: none;
     color: #BD5D38;
+}
+
+a.icone:hover{
+    background-color: #BD5D38;
 }
 
