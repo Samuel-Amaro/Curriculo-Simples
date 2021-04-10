@@ -22,23 +22,43 @@ span.foto_perfil{
     display: block;
 }
 
+span.foto_perfil > div.quadro{
+    position: relative;
+    width: 173px;
+    height: 173px;
+    background: url(../icones-imagens/perfil-miniatura-155.jpg) center;
+    background-repeat: no-repeat;
+    border-top: 8px;
+    border-bottom: 8px;
+    border-left: 8px;
+    border-right: 8px;    
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-color: black;
+    /*arredondando imagen - arredonda o prenchimento*/
+    border-radius: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/*
 img.img_profile{
     /*a largura da imagen pode ser 60% da largura total em relação ao elemento do conteiner que ele e filho*/
-    width: 64%;
+    /*width: 64%;
     /*navegador define altura automaticamente*/
-    height: auto;
+    /*height: auto;
     /*Add um prenchimento em todos os lados do elemento*/
-    border-top: 8px;
+    /*border-top: 8px;
     border-bottom: 8px;
     border-left: 8px;
     border-right: 8px;    
     border-style: solid;
     border-color:rgba(255, 255, 255, 0.2);
     /*arredondando imagen - arredonda o prenchimento*/
-    border-radius: 70%;
+    /*border-radius: 70%;
     /*a imagen pode ter a sua largura maxima*/
-    max-width: 100%;
-}
+    /*max-width: 100%;
+}*/
 
 /*no bloco de conteiner menu*/
 div.menu{
@@ -78,9 +98,13 @@ div.menu > a{
 
 /*conteiner de agrupamento dos elementos dentro do menu*/
 div.elementos_conteiner{
-    position: absolute;/*posição absoluta*/
-    top: 5%; /*se afasta 50% do topo, o topo tem 100%, 50% de distancia*/
+    position: relative;/*posição absoluta*/
+    top: 15%; /*se afasta 50% do topo, o topo tem 100%, 50% de distancia*/
     /*transform: translateY(-50%); /*alinhamento vertical de todos os elementos*/
+    /*height: 100%;
+    width: 100%;*/
+    margin: auto;
+    text-align: center;
 }
 
 div.menu > a:hover{
