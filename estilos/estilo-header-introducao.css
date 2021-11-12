@@ -85,8 +85,9 @@ nav.menu-navegacao-redes-socias{
 
 /*para item da lista*/
 nav.menu-navegacao-redes-socias > a.icone{
+    display: inline-block;
     /*cada item da lista vai se posicionar a esquerda*/
-    float: left;
+    /*float: left;*/
     /*add espaço interno em cada item da lista, entre a borda e conteudo, espaço interno entre a caixa do item da lista e a caixa do a*/
     padding-top: 17px;
     padding-right: 17px;
@@ -105,6 +106,7 @@ nav.menu-navegacao-redes-socias > a.icone{
     width: 56px;
     /*altura de cada item da lista*/
     height: 56px;
+    text-align: center;
 }
 
 /*para cada item da lista que possui um link(uma ancora)*/
@@ -127,4 +129,3 @@ a{
 a.icone:hover{
     background-color: #BD5D38;
 }
-
